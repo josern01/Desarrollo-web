@@ -1,0 +1,54 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+ 
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+}
+
+header{
+   
+    display: flex;
+    background-color: black;
+    justify-content: space-between; /*se separa por bloques, en este caso el nav y el a*/
+    align-items: center;
+    padding: 10px;  /*relleno entre los elemtos y el header*/
+}
+
+.logo{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    display: flex;
+}
+
+.logo img{   /*seria el padre en donde pertenece la imagen y nombre empresa*/
+    align-items: center;
+    height: 50px;
+    margin-right: 15px;
+    
+}
+
+nav a{   /*donde se ecuentran los links*/
+    font-weight: 600;
+    text-decoration: none;  /*se le quita el subrrayado al los links*/
+    padding-right: 10px;
+    color: aliceblue;
+}
+
+nav a:hover{ 
+    color: yellow;
+}
+
+@media (max-width: 600px){       /*para hacer responsive, dterminado tamaño se modifican los nav*/
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;   /*arriba y abajo 10px y derecha izq 0px*/
+    }
+}
+
